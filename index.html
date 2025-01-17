@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio || Soumyadeep Chatterjee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+
+        .experience-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #34495e;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/ProfilePic.jpeg" alt="Profile Picture" class="profile-img">
+            <h1>Soumyadeep Chatterjee</h1>
+            <p>Software Engineer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                <p>I am a passionate and driven Computer Science graduate student at Wayne State University,
+                    specializing in full-stack development, app development and data-driven solutions. With a strong
+                    foundation in Python, ReactJS, Swift and cloud technologies, I aim to create innovative and
+                    efficient applications that solve real-world problems. My career goals include working in
+                    cutting-edge AI and software development roles where I can leverage my skills to make an impactful
+                    contribution.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Software Engineer at Allianz Technology</h3>
+                <p class="date">May 2021 - Dec 2022</p>
+                <p>
+                    <li>Led efforts to automate defect resolution processes for Allianz's ServiceNow platform using
+                        Java, JavaScript, and ServiceNow APIs, integrating cross-functional feedback to enhance policy
+                        management and claims handling, reducing system downtime by 15% and increasing internal user
+                        satisfaction by 25%</li>
+                    <li>Collaborated with a team of 5 developers to design and maintain Allianz’s customer-facing
+                        insurance portal using HTML, CSS, JavaScript, ReactJS, and Bootstrap, improving ticket
+                        resolution times by 20%.</li>
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Developer at Qutrix</h3>
+                <p class="date">Dec 2022 - Mar 2023</p>
+                <p>
+                    <li>Revitalized the mortgage solution's user interface and experience using ReactJS, Redux, HTML,
+                        CSS, Metronic, and JavaScript;propelled the conversion rate by 20% and slashed the user error
+                        rate by 15%.</li>
+                    <li> Development of Staffatom, a staff automation portal, optimizing the multi-dimensional review
+                        system and dashboard, resulting in a remarkable 35% reduction in workforce schedule conflicts
+                    </li>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/iExpense.png" alt="Project 1">
+                    <a href="https://github.com/Soumya98-dev/iExpense">
+                        <h3>iExpense</h3>
+                    </a>
+                    <p>iExpense is a SwiftUI-based expense tracking app that allows users to manage their personal and
+                        business expenses efficiently. The app also supports a total budget feature, enabling users to
+                        monitor their remaining funds and ensure they stay within their financial limits.</p>
+                </div>
+                <div class="project-card">
+                    <img src="/images/BetterRest.png" alt="Project 2">
+                    <a href="https://github.com/Soumya98-dev/BetterRest">
+                        <h3>Better Rest</h3>
+                    </a>
+                    <p>Designed to help coffee drinkers get a good night’s sleep by asking them three questions. Feed
+                        them into Core ML to get a result telling us when they ought to go to bed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <p><strong>Development:</strong> JavaScript, HTML5, CSS3, Java, NodeJS</p>
+                    <p><strong>Database:</strong> MySQL, MongoDB</p>
+                    <p><strong>Frameworks/Libraries:</strong> ReactJS, Redux, JDBC, JSP</p>
+                    <p><strong>AI/ML:</strong> Python, Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</p>
+                    <p><strong>Cloud & Mobile:</strong> AWS, Swift, SwiftUI</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <p>
+                    <ul>
+                        <li>Problem-solving and analytical thinking</li>
+                        <li>Adaptability and learning agility</li>
+                        <li>Collaboration and teamwork</li>
+                        <li>Strong communication(written & verbal)</li>
+                        <li>Time management and prioritization</li>
+                        <li>Creativity and innovation</li>
+                        <li>Attention to detail</li>
+                        <li>Empathy and emotional intelligence</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <p>
+                    <ul>
+                        <li>Version Control: Git, GitHub</li>
+                        <li>Cloud Platforms: AWS, Firebase</li>
+                        <li>Development Tools: Visual Studio Code, IntelliJ IDEA, Xcode</li>
+                        <li>Containerization: Docker</li>
+                        <li>Build Tools: Maven, Gradle</li>
+                        <li>CI/CD: GitHub Actions, Jenkins</li>
+                        <li>Data Visualization: Tableau, Matplotlib, Seaborn</li>
+                        <li>Operating Systems: macOS, Windows, Linux</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Soumyadeep Chatterjee. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/deep98/">LinkedIn</a>
+                <a href="https://github.com/Soumya98-dev">GitHub</a>
+                <a href="mailto:soumya.dc98@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
