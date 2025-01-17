@@ -257,7 +257,7 @@
             <div class="experience-item">
                 <h3>Software Engineer at Allianz Technology</h3>
                 <p class="date">May 2021 - Dec 2022</p>
-                <p>
+                <ul>
                     <li>Led efforts to automate defect resolution processes for Allianz's ServiceNow platform using
                         Java, JavaScript, and ServiceNow APIs, integrating cross-functional feedback to enhance policy
                         management and claims handling, reducing system downtime by 15% and increasing internal user
@@ -265,19 +265,19 @@
                     <li>Collaborated with a team of 5 developers to design and maintain Allianz’s customer-facing
                         insurance portal using HTML, CSS, JavaScript, ReactJS, and Bootstrap, improving ticket
                         resolution times by 20%.</li>
-                </p>
+                </ul>
             </div>
             <div class="experience-item">
                 <h3>Software Developer at Qutrix</h3>
                 <p class="date">Dec 2022 - Mar 2023</p>
-                <p>
+                <ul>
                     <li>Revitalized the mortgage solution's user interface and experience using ReactJS, Redux, HTML,
                         CSS, Metronic, and JavaScript;propelled the conversion rate by 20% and slashed the user error
                         rate by 15%.</li>
                     <li> Development of Staffatom, a staff automation portal, optimizing the multi-dimensional review
                         system and dashboard, resulting in a remarkable 35% reduction in workforce schedule conflicts
                     </li>
-                </p>
+                </ul>
             </div>
         </div>
     </section>
@@ -356,19 +356,23 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xlddknng" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
+                <!-- Add a hidden input for the subject -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://soumya98-dev.github.io/thanks.html">
                 <button type="submit">Send Message</button>
             </form>
         </div>
