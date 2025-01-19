@@ -201,6 +201,49 @@
             text-decoration: none;
         }
 
+        .resume-section {
+            text-align: center;
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .resume-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-download {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .resume-download:hover {
+            background: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-download svg {
+            margin-right: 10px;
+        }
+
+        .resume-description {
+            color: #666;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             nav ul {
@@ -247,6 +290,28 @@
                     cutting-edge AI and software development roles where I can leverage my skills to make an impactful
                     contribution.</p>
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <p class="resume-description">
+                    Download my resume to learn more about my professional experience,
+                    education, and skills. The resume includes detailed information about
+                    my projects and achievements.
+                </p>
+                <a href="assets/SoumyadeepChatterjee_Resume.pdff" class="resume-download" download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Resume
+                </a>
             </div>
         </div>
     </section>
