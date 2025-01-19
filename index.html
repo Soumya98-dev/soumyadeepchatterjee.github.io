@@ -114,9 +114,9 @@
 
         .project-card img {
             width: 100%;
-            height: 200px;
+            /* height: 200px; */
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 15px;
         }
 
@@ -244,6 +244,67 @@
             line-height: 1.6;
         }
 
+        .education-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 5px;
+            background: #f8f9fa;
+            transition: transform 0.2s;
+            border-left: 4px solid #3498db;
+        }
+
+        .education-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .education-period {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .education-details {
+            margin-bottom: 10px;
+        }
+
+        .gpa {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .courses {
+            margin-top: 15px;
+        }
+
+        .courses h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .courses ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .courses li {
+            background: #e1f0fa;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             nav ul {
@@ -294,27 +355,56 @@
         </div>
     </section>
 
-    <section class="resume-section">
+    <section id="education">
         <div class="container">
-            <h2>Resume</h2>
-            <div class="resume-container">
-                <p class="resume-description">
-                    Download my resume to learn more about my professional experience,
-                    education, and skills. The resume includes detailed information about
-                    my projects and achievements.
-                </p>
-                <a href="assets/SoumyadeepChatterjee_Resume.pdff" class="resume-download" download>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" y1="15" x2="12" y2="3" />
-                    </svg>
-                    Download Resume
-                </a>
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <h3>Master of Science in Computer Science</h3>
+                <span class="education-period">Expected May 2025</span>
+                <div class="education-details">
+                    <strong>Wayne State University</strong>, Detroit, Michigan
+                    <div class="gpa">GPA: 3.63/4.0</div>
+                </div>
+                <div class="courses">
+                    <h4>Relevant Coursework:</h4>
+                    <ul>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Deep Learning</li>
+                        <li>Machine Learning</li>
+                        <li>Database Management</li>
+                        <li>Digital Image Processing</li>
+                        <li>Parallel Computing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <span class="education-period">2016 - 2020</span>
+                <div class="education-details">
+                    <strong>Heritage Institute of Technology</strong>, Kolkata, India
+                    <!-- <div class="gpa">CGPA: 8.74/10.0</div> -->
+                </div>
+                <div class="courses">
+                    <h4>Relevant Coursework:</h4>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Computer Networks</li>
+                        <li>Web Development</li>
+                        <li>Operating Systems</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+
+
 
     <section id="experience">
         <div class="container">
@@ -414,6 +504,28 @@
                     </ul>
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <p class="resume-description">
+                    Download my resume to learn more about my professional experience,
+                    education, and skills. The resume includes detailed information about
+                    my projects and achievements.
+                </p>
+                <a href="assets/SoumyadeepChatterjee_Resume.pdff" class="resume-download" download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Resume
+                </a>
             </div>
         </div>
     </section>
