@@ -242,7 +242,7 @@
         }
 
         /* Skills Section */
-        .skills-grid {
+        /*.skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
@@ -259,7 +259,63 @@
         .skill-category h3 {
             color: #2c3e50;
             margin-bottom: 15px;
+        }*/
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .skill-category h3 i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Color theming */
+        .tech-skills {
+            border-left: 5px solid #3498db;
+        }
+
+        .soft-skills {
+            border-left: 5px solid #2ecc71;
+        }
+
+        .tools-tech {
+            border-left: 5px solid #e67e22;
+        }
+
 
         /* Contact Section */
         .contact-form {
@@ -558,10 +614,6 @@
     </section>
 
 
-
-
-
-
     <section id="experience">
         <div class="container">
             <h2>Experience</h2>
@@ -618,17 +670,20 @@
         </div>
     </section>
 
-    <section id="skills">
+    <!-- <section id="skills">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Technical Skills</h3>
-                    <p><strong>Development:</strong> JavaScript, HTML5, CSS3, Java, NodeJS</p>
-                    <p><strong>Database:</strong> MySQL, MongoDB</p>
-                    <p><strong>Frameworks/Libraries:</strong> ReactJS, Redux, JDBC, JSP</p>
-                    <p><strong>AI/ML:</strong> Python, Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</p>
-                    <p><strong>Cloud & Mobile:</strong> AWS, Swift, SwiftUI</p>
+                    <p><strong>Languages:</strong> Python, JavaScript, Swift, Java, C++</p>
+                    <p><strong>Front-End:</strong> ReactJS, Redux, HTML5, CSS3</p>
+                    <p><strong>Back-End:</strong> Node.js, Flask</p>
+                    <p><strong>Databases:</strong> MySQL, MongoDB,PostgreSQL</p>
+                    <p><strong>AI/ML:</strong> Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</p>
+                    <p><strong>Cloud & Mobile:</strong> AWS, SwiftUI</p>
+                    <p><strong>Tools:</strong> Git, Xcode, Figma, IntelliJ, OpenMP</p>
+                    <p><strong>Platforms:</strong> MacOs, Linux, Windows</p>
                 </div>
                 <div class="skill-category">
                     <h3>Soft Skills</h3>
@@ -662,7 +717,47 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category tech-skills">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <ul>
+                        <li><strong>Languages:</strong> Python, JavaScript, Swift, Java, C++</li>
+                        <li><strong>Front-End:</strong> ReactJS, Redux, HTML5, CSS3</li>
+                        <li><strong>Back-End:</strong> Node.js, Flask</li>
+                        <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
+                        <li><strong>AI/ML:</strong> Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category soft-skills">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <ul>
+                        <li>Problem-solving & Analytical Thinking</li>
+                        <li>Adaptability & Learning Agility</li>
+                        <li>Collaboration & Teamwork</li>
+                        <li>Time Management & Prioritization</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category tools-tech">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <ul>
+                        <li><strong>Version Control:</strong> Git, GitHub</li>
+                        <li><strong>Cloud:</strong> AWS, Firebase</li>
+                        <li><strong>Containerization:</strong> Docker</li>
+                        <li><strong>CI/CD:</strong> Jenkins, GitHub Actions</li>
+                        <li><strong>Development Tools:</strong> Visual Studio Code, IntelliJ, Xcode</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <section class="resume-section">
         <div class="container">
@@ -673,7 +768,8 @@
                     education, and skills. The resume includes detailed information about
                     my projects and achievements.
                 </p>
-                <a href="assets/SoumyadeepChatterjee_Resume.pdff" class="resume-download" download>
+                <a href="https://drive.google.com/file/d/1MRAiOwlAb_Rwu28tzdZoFcnYW68n5M60/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="resume-download" download>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
