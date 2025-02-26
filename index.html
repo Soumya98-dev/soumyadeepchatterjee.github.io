@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio of Soumyadeep Chatterjee, a Software Engineer and Computer Science master's student at Wayne State University specializing in full-stack development, AI, and software engineering.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Professional Portfolio || Soumyadeep Chatterjee</title>
+
 </head>
 
 <body>
@@ -52,14 +57,13 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>
-                <p>I am a passionate and driven Computer Science graduate student at Wayne State University,
-                    specializing in full-stack development, app development and data-driven solutions. With a strong
-                    foundation in Python, ReactJS, Swift and cloud technologies, I aim to create innovative and
-                    efficient applications that solve real-world problems. My career goals include working in
-                    cutting-edge AI and software development roles where I can leverage my skills to make an impactful
-                    contribution.</p>
-                </p>
+                <p>I'm Soumyadeep Chatterjee, a Computer Science master's student at Wayne State University, graduating
+                    in May 2025. I specialize in full-stack development, app development, and data-driven solutions with
+                    expertise in Python, ReactJS, Swift, and cloud technologies. Passionate about building scalable,
+                    user-friendly applications, I'm currently exploring machine learning and iOS development with
+                    SwiftUI. My goal is to contribute to cutting-edge AI and software development projects, leveraging
+                    my skills to create meaningful impact. Always eager to learn and collaborate, I thrive on pushing
+                    the boundaries of technology.</p>
             </div>
         </div>
     </section>
@@ -68,16 +72,19 @@
         <div class="container">
             <h2>Education</h2>
 
+            <!-- Master's Degree -->
             <div class="education-item">
-                <h3>Master of Science in Computer Science</h3>
-                <span class="education-period">Expected May 2025</span>
+                <div class="education-top">
+                    <h3>Master of Science in Computer Science</h3>
+                    <span class="education-period">Expected May 2025</span>
+                </div>
                 <div class="education-details">
                     <strong>Wayne State University</strong>, Detroit, Michigan
                     <div class="gpa">GPA: 3.63/4.0</div>
                 </div>
                 <div class="courses">
                     <h4>Relevant Coursework:</h4>
-                    <ul>
+                    <ul class="course-list">
                         <li>Data Structures & Algorithms</li>
                         <li>Deep Learning</li>
                         <li>Machine Learning</li>
@@ -88,16 +95,18 @@
                 </div>
             </div>
 
+            <!-- Bachelor's Degree -->
             <div class="education-item">
-                <h3>Bachelor of Technology in Computer Science</h3>
-                <span class="education-period">2016 - 2020</span>
+                <div class="education-top">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <span class="education-period">2016 - 2020</span>
+                </div>
                 <div class="education-details">
                     <strong>Heritage Institute of Technology</strong>, Kolkata, India
-                    <!-- <div class="gpa">CGPA: 8.74/10.0</div> -->
                 </div>
                 <div class="courses">
                     <h4>Relevant Coursework:</h4>
-                    <ul>
+                    <ul class="course-list">
                         <li>Data Structures</li>
                         <li>Algorithms</li>
                         <li>Object-Oriented Programming</li>
@@ -119,24 +128,21 @@
                 <p class="date">May 2021 - Dec 2022</p>
                 <ul>
                     <li>Led efforts to automate defect resolution processes for Allianz's ServiceNow platform using
-                        Java, JavaScript, and ServiceNow APIs, integrating cross-functional feedback to enhance policy
-                        management and claims handling, reducing system downtime by 15% and increasing internal user
-                        satisfaction by 25%</li>
-                    <li>Collaborated with a team of 5 developers to design and maintain Allianz’s customer-facing
-                        insurance portal using HTML, CSS, JavaScript, ReactJS, and Bootstrap, improving ticket
-                        resolution times by 20%.</li>
+                        Java, JavaScript, and ServiceNow APIs—reducing system downtime by 15% and boosting internal user
+                        satisfaction by 25%.</li>
+                    <li>Collaborated with a team of 5 developers to design and maintain a customer-facing insurance
+                        portal using HTML, CSS, JavaScript, ReactJS, and Bootstrap, improving ticket resolution times by
+                        20%.</li>
                 </ul>
             </div>
             <div class="experience-item">
                 <h3>Software Developer at Qutrix</h3>
                 <p class="date">Dec 2022 - Mar 2023</p>
                 <ul>
-                    <li>Revitalized the mortgage solution's user interface and experience using ReactJS, Redux, HTML,
-                        CSS, Metronic, and JavaScript;propelled the conversion rate by 20% and slashed the user error
-                        rate by 15%.</li>
-                    <li> Development of Staffatom, a staff automation portal, optimizing the multi-dimensional review
-                        system and dashboard, resulting in a remarkable 35% reduction in workforce schedule conflicts
-                    </li>
+                    <li>Revitalized a mortgage solution's UI using ReactJS, Redux, HTML, CSS, Metronic, and JavaScript;
+                        boosting conversion rates by 20% while cutting user errors by 15%.</li>
+                    <li>Developed Staffatom—a staff automation portal—optimizing multi-dimensional reviews and reducing
+                        workforce schedule conflicts by 35%.</li>
                 </ul>
             </div>
         </div>
@@ -147,21 +153,40 @@
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="images/iExpense.png" alt="Project 1">
-                    <a href="https://github.com/Soumya98-dev/iExpense">
+                    <img src="images/iExpense.png" alt="iExpense Project">
+                    <div class="project-content">
                         <h3>iExpense</h3>
-                    </a>
-                    <p>iExpense is a SwiftUI-based expense tracking app that allows users to manage their personal and
-                        business expenses efficiently. The app also supports a total budget feature, enabling users to
-                        monitor their remaining funds and ensure they stay within their financial limits.</p>
+                        <p>A SwiftUI-based expense tracker that helps users manage personal and business expenses while
+                            monitoring budgets.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Soumya98-dev/iExpense" class="project-link">View Project
+                                <span>&rarr;</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <img src="./images/BetterRest.png" alt="Project 2" />
-                    <a href="https://github.com/Soumya98-dev/BetterRest">
+                    <img src="images/BetterRest.png" alt="Better Rest Project">
+                    <div class="project-content">
                         <h3>Better Rest</h3>
-                    </a>
-                    <p>Designed to help coffee drinkers get a good night’s sleep by asking them three questions. Feed
-                        them into Core ML to get a result telling us when they ought to go to bed.</p>
+                        <p>An app designed to help coffee lovers get quality sleep by leveraging Core ML to suggest
+                            optimal bedtimes.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Soumya98-dev/BetterRest" class="project-link">View Project
+                                <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card featured-project">
+                    <img src="images/responsivenewsletter.png" alt="Newsletter Builder Project">
+                    <div class="project-content">
+                        <h3>Drag-and-Drop Newsletter Builder</h3>
+                        <p>A React-based web app featuring drag-and-drop functionality that makes designing newsletters
+                            effortless.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Soumya98-dev/Responsive-NewsLetter-Builder"
+                                class="project-link">View Project <span>&rarr;</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,7 +206,6 @@
                         <li><strong>AI/ML:</strong> Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</li>
                     </ul>
                 </div>
-
                 <div class="skill-category soft-skills">
                     <h3><i class="fas fa-users"></i> Soft Skills</h3>
                     <ul>
@@ -191,7 +215,6 @@
                         <li>Time Management & Prioritization</li>
                     </ul>
                 </div>
-
                 <div class="skill-category tools-tech">
                     <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
                     <ul>
@@ -206,18 +229,16 @@
         </div>
     </section>
 
-
     <section class="resume-section">
         <div class="container">
             <h2>Resume</h2>
             <div class="resume-container">
                 <p class="resume-description">
-                    Download my resume to learn more about my professional experience,
-                    education, and skills. The resume includes detailed information about
-                    my projects and achievements.
+                    Download my resume to learn more about my professional experience, education, and skills. It
+                    includes detailed information about my projects and achievements.
                 </p>
                 <a href="https://drive.google.com/file/d/1zSRvZyYyC81x0Z5W6IwkrzytTnNth98k/view?usp=sharing"
-                    target="_blank" rel="noopener noreferrer" class="resume-download" download>
+                    target="_blank" rel="noopener noreferrer" class="resume-download">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -246,9 +267,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <!-- Add a hidden input for the subject -->
                 <input type="hidden" name="_subject" value="New Contact Form Submission">
-                <!-- Redirect after submission -->
                 <input type="hidden" name="_next" value="https://soumya98-dev.github.io/thanks.html">
                 <button type="submit">Send Message</button>
             </form>
@@ -265,6 +284,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
