@@ -617,7 +617,7 @@ section h2::after {
 }
 
 /* Resume */
-.resume-section {
+#resume-section {
   text-align: center;
   padding: 80px 0;
   background: #121212;
