@@ -103,14 +103,11 @@ header p {
   transform: translateY(-2px);
 }
 
-/* Force all icons (inline SVG or <i> elements) to the same size */
 .header-social-links a svg,
 .header-social-links a i {
-  width: 20px; /* or 18px, 24px—whatever you prefer */
+  width: 20px;
   height: 20px;
-  /* If using Font Awesome <i>, 'font-size' can also help */
   font-size: 20px;
-  /* Keep line-height small so the icon is centered vertically */
   line-height: 1;
 }
 
@@ -195,8 +192,8 @@ section h2::after {
 
 /* Education */
 .education-item {
-  background-color: #1e1e1e; /* Matches your dark theme */
-  border: 1px solid #333; /* Subtle border */
+  background-color: #1e1e1e;
+  border: 1px solid #333;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -210,7 +207,7 @@ section h2::after {
 
 .education-top {
   display: flex;
-  flex-wrap: wrap; /* So date wraps nicely on small screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
@@ -219,7 +216,7 @@ section h2::after {
 .education-top h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: #fff; /* Title color */
+  color: #fff;
 }
 
 .education-period {
@@ -247,7 +244,7 @@ section h2::after {
 
 .courses h4 {
   margin: 15px 0 10px;
-  color: #3498db; /* Accent color for subheading */
+  color: #3498db;
 }
 
 .course-list {
@@ -255,7 +252,7 @@ section h2::after {
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  padding-left: 0; /* Remove default list padding */
+  padding-left: 0;
   margin: 0;
 }
 
@@ -310,17 +307,20 @@ section h2::after {
   margin-bottom: 10px;
 }
 
-/* Projects */
+/* ===== START: UPDATED PROJECTS SECTION ===== */
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   margin-top: 40px;
+  align-items: stretch;
 }
 
 .project-card {
   background: #2a2a2a;
   border-radius: 10px;
+  border: 1px solid #404040;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -328,29 +328,20 @@ section h2::after {
   flex-direction: column;
 }
 
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #404040;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
 }
 
 .project-card.featured-project {
   grid-column: span 2;
-  flex-direction: row;
-  align-items: stretch;
 }
 
-.project-card.featured-project img {
-  width: 40%;
-  height: auto;
+.project-card img {
+  width: 100%;
+  height: 220px;
   object-fit: cover;
-  border-right: 1px solid #404040;
-  border-bottom: none;
-}
-
-.project-card.featured-project .project-content {
-  width: 60%;
+  border-bottom: 1px solid #404040;
 }
 
 .project-content {
@@ -382,7 +373,11 @@ section h2::after {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #5dade2;
 }
 
 .project-link span {
@@ -394,15 +389,17 @@ section h2::after {
   transform: translateX(3px);
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+@media (max-width: 992px) {
+  .project-card.featured-project {
+    grid-column: span 1;
+  }
 }
 
+/* ===== END: UPDATED PROJECTS SECTION ===== */
+
 /* Achievements & Certificates Sections */
-/* Achievements Section */
 #achievements {
-  padding: 60px 0; /* Adjust if needed to reduce big gaps */
+  padding: 60px 0;
   background-color: #1e1e1e;
 }
 
@@ -426,14 +423,12 @@ section h2::after {
   transform: translateX(-50%);
 }
 
-/* Achievements Grid */
 .achievement-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* Individual Achievement Card */
 .achievement-card {
   background: #2a2a2a;
   border-radius: 8px;
@@ -450,14 +445,12 @@ section h2::after {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Trophy Icon */
 .achievement-icon {
   font-size: 2em;
   color: #3498db;
   flex-shrink: 0;
 }
 
-/* Achievement Content */
 .achievement-content h3 {
   color: #fff;
   margin-bottom: 8px;
@@ -502,15 +495,12 @@ section h2::after {
   transform: translateX(-50%);
 }
 
-/* Certificate Cards Grid */
 .certificate-grid {
   display: grid;
   gap: 20px;
-  /* Adjust the min width to fit your design preference */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Individual Certificate Card */
 .certificate-card {
   background: #2a2a2a;
   border-radius: 8px;
@@ -527,14 +517,12 @@ section h2::after {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Certificate Icon */
 .certificate-icon {
   font-size: 2em;
   color: #3498db;
-  flex-shrink: 0; /* Keeps icon from shrinking in small spaces */
+  flex-shrink: 0;
 }
 
-/* Certificate Content */
 .certificate-content h3 {
   color: #fff;
   margin-bottom: 8px;
@@ -746,21 +734,6 @@ footer {
     gap: 20px;
   }
 
-  /* Featured project: ensure it only spans one column on mobile */
-  .project-card.featured-project {
-    grid-column: span 1; /* add this */
-    flex-direction: column;
-  }
-
-  .project-card.featured-project img {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #404040;
-  }
-
-  .project-card.featured-project .project-content {
-    width: 100%;
-  }
   .skills-grid {
     grid-template-columns: 1fr;
   }
